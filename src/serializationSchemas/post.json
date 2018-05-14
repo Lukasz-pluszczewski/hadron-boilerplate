@@ -1,0 +1,15 @@
+{
+  "name": "Post",
+  "properties": [
+    { "name": "id", "type": "number", "groups": ["ROLE_ADMIN"] },
+    { "name": "title", "type": "string" },
+    { "name": "content", "type": "string" },
+    {
+      "name": "tags",
+      "type": "string",
+      "items": {
+        "type": "string"
+      }
+    }
+  ]
+}
