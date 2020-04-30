@@ -11,7 +11,9 @@
     "lint": "NODE_PATH=src eslint src || true",
     "lint:fix": "NODE_PATH=src eslint src --fix",
     "fixtures:users": "NODE_PATH=src nodemon -w src --exec \"babel-node fixtures/users.js --presets es2015,stage-0\"",
-    "generateToken": "NODE_PATH=src nodemon -w src --exec \"babel-node fixtures/generateToken.js --presets es2015,stage-0\""
+    "generateToken": "NODE_PATH=src nodemon -w src --exec \"babel-node fixtures/generateToken.js --presets es2015,stage-0\"",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Łukasz Pluszczewski",
   "license": "MIT",
@@ -29,7 +31,8 @@
     "http-status": "1.1.0",
     "jsonwebtoken": "8.2.1",
     "lodash": "4.17.10",
-    "password-hash": "1.2.2"
+    "password-hash": "1.2.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
@@ -40,5 +43,6 @@
     "eslint": "4.19.1",
     "eslint-config-brainhub": "1.8.0",
     "nodemon": "1.17.4"
-  }
+  },
+  "snyk": true
 }
