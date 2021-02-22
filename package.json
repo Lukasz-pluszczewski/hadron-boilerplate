@@ -28,7 +28,7 @@
     "express": "4.16.3",
     "http-status": "1.1.0",
     "jsonwebtoken": "8.2.1",
-    "lodash": "4.17.10",
+    "lodash": "4.17.21",
     "password-hash": "1.2.2"
   },
   "devDependencies": {
